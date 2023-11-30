@@ -1,0 +1,16 @@
+How to apply hybrid spectral net algorithm on images, which has normal image and semantic segmentation of those images. give code in depth
+
+My dataset is in the form of 
+Main folder name semantic, it has 8 sub folders and 1 file
+tile 1 has 2 folders named images and masks folders
+tile 2 has 2 folders named images and masks folders
+tile 3 has 2 folders named images and masks folders
+tile 4 has 2 folders named images and masks folders
+tile 5 has 2 folders named images and masks folders
+tile 6 has 2 folders named images and masks folders
+tile 7 has 2 folders named images and masks folders
+tile 8 has 2 folders named images and masks folders
+classes is a json file
+classes contains this code {"classes": [{"title": "Water", "shape": "polygon", "color": "#50E3C2", "geometry_config": {}}, {"title": "Land (unpaved area)", "shape": "polygon", "color": "#F5A623", "geometry_config": {}}, {"title": "Road", "shape": "polygon", "color": "#DE597F", "geometry_config": {}}, {"title": "Building", "shape": "polygon", "color": "#D0021B", "geometry_config": {}}, {"title": "Vegetation", "shape": "polygon", "color": "#417505", "geometry_config": {}}, {"title": "Unlabeled", "shape": "polygon", "color": "#9B9B9B", "geometry_config": {}}], "tags": []}
+
+masks folder contains semantic segmentation images of the the images in images folder

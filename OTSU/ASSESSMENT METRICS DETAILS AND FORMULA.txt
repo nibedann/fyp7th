@@ -1,0 +1,24 @@
+Variation of Information (VI):
+
+The Variation of Information measures the discrepancy between two segmentations.
+Formula: VI(P, Q) = H(P) + H(Q) - 2 * I(P, Q)
+H(P) and H(Q) are the entropies of the segmentations P and Q, respectively.
+I(P, Q) is the mutual information between P and Q.
+Normalized Cuts:
+
+Normalized Cuts evaluates the quality of a segmentation by measuring the ratio of dissimilarity between regions and the dissimilarity within regions.
+Formula: NCut(S) = (Cut(S, V - S) / vol(S)) + (Cut(S, V - S) / vol(V - S))
+Cut(S, V - S) measures the dissimilarity between the segments S and V - S.
+vol(S) and vol(V - S) represent the total volume (sum of pixel intensities) of segments S and V - S, respectively.
+Compactness:
+
+Compactness measures how compact the segments are by evaluating the ratio of the boundary length to the total area of each segment.
+Formula: Compactness(S) = perimeter(S)² / area(S)
+perimeter(S) is the length of the boundary of segment S.
+area(S) represents the total area (number of pixels) of segment S.
+Objectness:
+
+Objectness evaluates the likelihood of a segment representing a meaningful object.
+Formula: Objectness(S) = (2 * mean(S) * std(S)) / (mean(S) + std(S))
+mean(S) is the average intensity value within segment S.
+std(S) is the standard deviation of the intensity values within segment S.
